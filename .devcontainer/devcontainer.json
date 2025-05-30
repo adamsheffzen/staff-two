@@ -1,0 +1,12 @@
+{
+  "name": "Interview Container",
+ "features": {
+ 	"github-cli": "latest"
+ },
+"forwardPorts": [
+ 	4000,
+ 	5173
+ ],
+ "portsAttributes": {"4000": {"label": "Server"},"5173": {"label": "Client"}},
+ "postCreateCommand": "/bin/bash ./.devcontainer/change_port_visibility.sh 4000 5173"
+}
