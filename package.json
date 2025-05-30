@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm install && npm run dev",
-    "client": "cd staff-interview-ui && npm install && npm run dev"
+    "server": "cd server && echo 'Installing dependencies...' && npm install && echo 'Starting development server...' && npm run dev",
+    "client": "cd staff-interview-ui && echo 'Installing dependencies...' && npm install && echo 'Starting development client...' && npm run dev --host"
   }
 }

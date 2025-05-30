@@ -1,0 +1,29 @@
+{
+  "name": "Interview Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "forwardPorts": [4000, 5173],
+  "portsAttributes": {
+    "4000": {
+      "label": "Fastify Server"
+    },
+    "5173": {
+      "label": "React Client",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "npm install",
+  "postStartCommand": ".devcontainer/start_and_expose_ports.sh",
+  "customizations": {
+  "vscode": {
+    "extensions": [
+      "ms-vsliveshare.vsliveshare"
+    ],
+    "settings": {
+      "files.autoSave": "off"
+    }
+  }
+}
+}

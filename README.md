@@ -29,4 +29,4 @@ The backend, built with Fastify, handles code submissions and stores them in a J
 - Give some general impressions of the application implementation and discuss any thoughts about improvements for features, code quality, best practices, etc. based on your review.
 
 
-The React app will be available at [http://localhost:3000](http://localhost:5173) and will communicate with the Fastify backend at [http://localhost:4000](http://localhost:4000).
+The React app will be available at [http://localhost:5173](http://localhost:5173) and will communicate with the Fastify backend at [http://localhost:4000](http://localhost:4000).
